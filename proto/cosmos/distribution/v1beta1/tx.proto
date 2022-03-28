@@ -55,7 +55,10 @@ message MsgWithdrawDelegatorReward {
 }
 
 // MsgWithdrawDelegatorRewardResponse defines the Msg/WithdrawDelegatorReward response type.
-message MsgWithdrawDelegatorRewardResponse {}
+message MsgWithdrawDelegatorRewardResponse {
+  repeated cosmos.base.v1beta1.Coin amount = 1
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+}
 
 // MsgWithdrawValidatorCommission withdraws the full commission to the validator
 // address.
@@ -67,7 +70,8 @@ message MsgWithdrawValidatorCommission {
 }
 
 // MsgWithdrawValidatorCommissionResponse defines the Msg/WithdrawValidatorCommission response type.
-message MsgWithdrawValidatorCommissionResponse {}
+message MsgWithdrawValidatorCommissionResponse {
+}
 
 message MsgWithdrawTokenizeShareRecordReward {
   option (gogoproto.equal)           = false;
@@ -76,7 +80,10 @@ message MsgWithdrawTokenizeShareRecordReward {
   string owner_address = 1 [(gogoproto.moretags) = "yaml:\"owner_address\""];
 }
 
-message MsgWithdrawTokenizeShareRecordRewardResponse {}
+message MsgWithdrawTokenizeShareRecordRewardResponse {
+  repeated cosmos.base.v1beta1.Coin amount = 1
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+}
 
 // MsgFundCommunityPool allows an account to directly
 // fund the community pool.
