@@ -57,7 +57,7 @@ message MsgWithdrawDelegatorReward {
 // MsgWithdrawDelegatorRewardResponse defines the Msg/WithdrawDelegatorReward response type.
 message MsgWithdrawDelegatorRewardResponse {
   repeated cosmos.base.v1beta1.Coin amount = 1
-      [(gogoproto.nullable) = true, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
 }
 
 // MsgWithdrawValidatorCommission withdraws the full commission to the validator
@@ -72,7 +72,7 @@ message MsgWithdrawValidatorCommission {
 // MsgWithdrawValidatorCommissionResponse defines the Msg/WithdrawValidatorCommission response type.
 message MsgWithdrawValidatorCommissionResponse {
   repeated cosmos.base.v1beta1.Coin amount = 1
-      [(gogoproto.nullable) = true, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
 }
 
 message MsgWithdrawTokenizeShareRecordReward {
