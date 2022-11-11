@@ -15,6 +15,7 @@ func VerifySignature(pubKey cryptotypes.PubKey, signerData SignerData, sigData s
 	switch data := sigData.(type) {
 	case *signing.SingleSignatureData:
 		signBytes, err := handler.GetSignBytes(data.SignMode, signerData, tx)
+		fmt.Println("signBytes", signBytes)
 		if err != nil {
 			return err
 		}
