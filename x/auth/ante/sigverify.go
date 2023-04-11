@@ -233,7 +233,7 @@ func OnlyLegacyAminoSigners(sigData signing.SignatureData) bool {
 }
 
 func (svd SigVerificationDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simulate bool, next sdk.AnteHandler) (newCtx sdk.Context, err error) {
-	ctx.Logger().Debug("SigVerificationDecorator", "tx msgs", tx.GetMsgs())
+	ctx.Logger().Debug("SigVerificationDecorator", "tx", tx)
 
 	sigTx, ok := tx.(authsigning.SigVerifiableTx)
 	if !ok {
@@ -301,6 +301,7 @@ func (svd SigVerificationDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simul
 				} else {
 					errMsg = fmt.Sprintf("signature verification failed; please verify account number (%d) and chain-id (%s)", accNum, chainID)
 				}
+				ctx.Logger().Debug("SigVerificationDecorator", "errMsg", errMsg)
 				return ctx, sdkerrors.Wrap(sdkerrors.ErrUnauthorized, errMsg)
 
 			}
