@@ -233,7 +233,7 @@ func OnlyLegacyAminoSigners(sigData signing.SignatureData) bool {
 }
 
 func (svd SigVerificationDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simulate bool, next sdk.AnteHandler) (newCtx sdk.Context, err error) {
-	ctx.Logger().Debug("SigVerificationDecorator", "tx", tx)
+	ctx.Logger().Debug("SigVerificationDecorator", "tx msgs", tx.GetMsgs())
 
 	sigTx, ok := tx.(authsigning.SigVerifiableTx)
 	if !ok {
