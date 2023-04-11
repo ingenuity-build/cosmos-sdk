@@ -301,7 +301,7 @@ func (svd SigVerificationDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simul
 				} else {
 					errMsg = fmt.Sprintf("signature verification failed; please verify account number (%d) and chain-id (%s)", accNum, chainID)
 				}
-				ctx.Logger().Debug("SigVerificationDecorator", "errMsg", errMsg)
+				ctx.Logger().Debug("SigVerificationDecorator", "errMsg", errMsg, "sig data", sig.Data)
 				return ctx, sdkerrors.Wrap(sdkerrors.ErrUnauthorized, errMsg)
 
 			}
