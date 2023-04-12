@@ -298,7 +298,7 @@ func (svd SigVerificationDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simul
 					// and therefore communicate sequence number as a potential cause of error.
 					errMsg = fmt.Sprintf("signature verification failed; please verify account number (%d), sequence (%d) and chain-id (%s): sig error %w", accNum, acc.GetSequence(), chainID, err)
 				} else {
-					errMsg = fmt.Sprintf("signature verification failed; please verify account number (%d) and chain-id (%s): sig error %w\"", accNum, chainID, err)
+					errMsg = fmt.Sprintf("signature verification failed; please verify account number (%d) and chain-id (%s): sig error %w", accNum, chainID, err)
 				}
 				ctx.Logger().Info("SigVerificationDecorator",
 					"errMsg", errMsg,
