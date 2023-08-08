@@ -7,7 +7,7 @@ require (
 	github.com/cosmos/gogoproto v1.4.8
 	github.com/golang/protobuf v1.5.3
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
-	github.com/regen-network/gocuke v0.6.2
+	github.com/regen-network/gocuke v0.6.3
 	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1
 	google.golang.org/grpc v1.54.0
 	gotest.tools/v3 v3.4.0
@@ -24,7 +24,6 @@ require (
 	cosmossdk.io/store v0.1.0-alpha.1.0.20230328185921-37ba88872dbc // indirect
 	cosmossdk.io/x/tx v0.5.5 // indirect
 	github.com/DataDog/zstd v1.5.2 // indirect
-	github.com/alecthomas/participle/v2 v2.0.0-alpha7 // indirect
 	github.com/armon/go-metrics v0.4.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.3.2 // indirect
@@ -39,8 +38,10 @@ require (
 	github.com/cosmos/btcutil v1.0.5 // indirect
 	github.com/cosmos/cosmos-db v1.0.0-rc.1 // indirect
 	github.com/cosmos/cosmos-proto v1.0.0-beta.3 // indirect
-	github.com/cucumber/common/gherkin/go/v22 v22.0.0 // indirect
-	github.com/cucumber/common/messages/go/v17 v17.1.1 // indirect
+	github.com/cucumber/common/messages/go/v19 v19.1.2 // indirect
+	github.com/cucumber/gherkin/go/v26 v26.0.3 // indirect
+	github.com/cucumber/messages/go/v21 v21.0.1 // indirect
+	github.com/cucumber/tag-expressions/go/v5 v5.0.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.2.0 // indirect
 	github.com/getsentry/sentry-go v0.20.0 // indirect
