@@ -11,7 +11,7 @@ require (
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/manifoldco/promptui v0.9.0
 	github.com/pelletier/go-toml/v2 v2.0.7
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.1
 	google.golang.org/grpc v1.54.0
 	google.golang.org/protobuf v1.30.0
 )
