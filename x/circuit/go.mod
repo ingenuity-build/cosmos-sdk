@@ -20,7 +20,7 @@ require (
 	cosmossdk.io/depinject v1.0.0-alpha.3 // indirect
 	cosmossdk.io/errors v1.0.0-beta.7 // indirect
 	cosmossdk.io/log v1.0.0 // indirect
-	cosmossdk.io/math v1.0.0 // indirect
+	cosmossdk.io/math v1.4.0 // indirect
 	cosmossdk.io/store v0.1.0-alpha.1.0.20230328185921-37ba88872dbc // indirect
 	cosmossdk.io/x/tx v0.5.5 // indirect
 	github.com/DataDog/zstd v1.5.2 // indirect
@@ -85,7 +85,6 @@ require (
 	golang.org/x/sys v0.7.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 	pgregory.net/rapid v0.5.5 // indirect
-	sigs.k8s.io/yaml v1.3.0 // indirect
+	sigs.k8s.io/yaml v1.4.0 // indirect
 )
