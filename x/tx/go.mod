@@ -1,6 +1,7 @@
 module cosmossdk.io/x/tx
 
 go 1.20
+toolchain go1.24.1
 
 require (
 	cosmossdk.io/api v0.4.1
@@ -13,7 +14,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.2
 	github.com/tendermint/go-amino v0.16.0
-	google.golang.org/protobuf v1.30.0
+	google.golang.org/protobuf v1.36.6
 	gotest.tools/v3 v3.4.0
 	pgregory.net/rapid v0.5.5
 )
