@@ -14,7 +14,7 @@ require (
 	cosmossdk.io/x/tx v0.5.5
 	github.com/99designs/keyring v1.2.1
 	github.com/armon/go-metrics v0.4.1
-	github.com/bgentry/speakeasy v0.1.1-0.20220910012023-760eaf8b6816
+	github.com/bgentry/speakeasy v0.2.0
 	github.com/bits-and-blooms/bitset v1.7.0
 	github.com/chzyer/readline v1.5.1
 	github.com/cockroachdb/apd/v2 v2.0.2
