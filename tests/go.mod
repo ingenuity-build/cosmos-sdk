@@ -1,6 +1,6 @@
 module github.com/cosmos/cosmos-sdk/tests
 
-go 1.20
+go 1.22
 
 require (
 	cosmossdk.io/api v0.4.1
@@ -25,7 +25,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/spf13/cobra v1.7.0
 	github.com/stretchr/testify v1.8.2
-	google.golang.org/protobuf v1.30.0
+	google.golang.org/protobuf v1.36.7
 	gotest.tools/v3 v3.4.0
 	pgregory.net/rapid v0.5.5
 )
