@@ -6,7 +6,7 @@ require (
 	github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230424095137-b73c17cb9cc8
 	github.com/creachadair/atomicfile v0.3.0
 	github.com/creachadair/tomledit v0.0.24
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.10.1
 	github.com/spf13/viper v1.15.0
 	golang.org/x/exp v0.0.0-20230321023759-10a507213a29
 	gotest.tools/v3 v3.4.0
@@ -128,7 +128,7 @@ require (
 	github.com/spf13/afero v1.9.3 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/pflag v1.0.9 // indirect
 	github.com/stretchr/testify v1.8.2 // indirect
 	github.com/subosito/gotenv v1.4.2 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20220721030215-126854af5e6d // indirect
