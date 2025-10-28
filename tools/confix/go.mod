@@ -1,10 +1,10 @@
 module cosmossdk.io/tools/confix
 
-go 1.20
+go 1.24
 
 require (
 	github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230424095137-b73c17cb9cc8
-	github.com/creachadair/atomicfile v0.3.0
+	github.com/creachadair/atomicfile v0.4.0
 	github.com/creachadair/tomledit v0.0.24
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.15.0
