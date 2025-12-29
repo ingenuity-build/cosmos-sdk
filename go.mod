@@ -42,7 +42,7 @@ require (
 	github.com/huandu/skiplist v1.2.0
 	github.com/improbable-eng/grpc-web v0.15.0
 	github.com/jhump/protoreflect v1.15.1
-	github.com/magiconair/properties v1.8.7
+	github.com/magiconair/properties v1.8.10
 	github.com/manifoldco/promptui v0.9.0
 	github.com/mattn/go-isatty v0.0.18
 	github.com/prometheus/client_golang v1.15.0
