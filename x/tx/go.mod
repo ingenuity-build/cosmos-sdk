@@ -1,6 +1,6 @@
 module cosmossdk.io/x/tx
 
-go 1.20
+go 1.23
 
 require (
 	cosmossdk.io/api v0.4.1
@@ -15,7 +15,7 @@ require (
 	github.com/tendermint/go-amino v0.16.0
 	google.golang.org/protobuf v1.30.0
 	gotest.tools/v3 v3.4.0
-	pgregory.net/rapid v0.5.5
+	pgregory.net/rapid v1.3.0
 )
 
 require (
